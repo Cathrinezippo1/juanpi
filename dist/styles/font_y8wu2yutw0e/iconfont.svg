@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="shuminghaoyouxian" unicode="&#59218;" d="M990.4 417.6 524.8 883.2c-16 16-44.8 16-60.8 0-16-16-16-43.2 0-60.8L902.4 384 464-54.4c-16-16-16-43.2 0-60.8 16-16 44.8-16 60.8 0l467.2 465.6c9.6 9.6 12.8 20.8 11.2 33.6C1003.2 396.8 1000 408 990.4 417.6zM486.4 384c1.6 12.8-3.2 24-11.2 33.6L94.4 796.8c-16 16-44.8 16-60.8 0-16-16-16-43.2 0-60.8L387.2 384 33.6 30.4c-16-16-16-43.2 0-60.8 16-16 44.8-16 60.8 0l380.8 379.2C484.8 360 488 371.2 486.4 384z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

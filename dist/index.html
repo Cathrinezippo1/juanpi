@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="./styles/index.css">
+		<link rel="stylesheet" href="./styles/font_593bnrwkszr/iconfont.css">
+		<link rel="stylesheet" href="./styles/font_gway3anzx3h/iconfont.css">
+		<link rel="stylesheet" href="./styles/font_y8wu2yutw0e/iconfont.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	</head>
+
+	<body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+		<div class="xiding" id="xiding">
+			<ul>
+				<li class="one">
+					<a href="//www.juanpi.com/nvzhuang">
+						<span>今日上新</span>
+					</a>
+				</li>
+                <li>
+                    <a href="//www.juanpi.com/nvzhuang">
+                        女装
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/nanzhuang">
+                         男装
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/xiezi">
+                         鞋子
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/xiangbao">
+                          箱包
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/muying">
+                        母婴
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/meizhuang">
+                          美妆
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/jujia">
+                          居家
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/jiafang">
+                          家纺
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/wenti">
+                         文体
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/meishi">
+                          美食
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/shuma">
+                         数码
+                    </a>
+                </li>
+                <li>
+                    <a href="//www.juanpi.com/dianqi">
+                        电器
+                    </a>
+                </li>
+                <li class="border-none">
+                    <a href="//www.juanpi.com/neiyi">
+                         内衣
+                    </a>
+                </li>
+                <li class="border-none">
+                    <a href="//www.juanpi.com/peishi">
+                          配饰
+                    </a>
+                </li>
+            </ul>
+        </div>
+		<div id="toolbar">
+			<div class="bar-con">
+				<div class="right-show fr">
+					<div class="login-show">
+						<a href="https://user.juanpi.com/login" rel="nofollow">登录</a>
+						<a href="https://user.juanpi.com/register" rel="nofollow" id="nav-reg">免费注册</a>　|
+						<a href="https://user.juanpi.com/order" rel="nofollow">我的订单</a>&nbsp;
+						<a href="https://seller.juanpi.com/choice/welcome" rel="nofollow">商家入驻</a>&nbsp;</div>
+					<div class="bag-show">
+						<a href="//cart.juanpi.com/cart" class="bag-a"><span class="icon-normal icon-bag fl"><i class="iconfont">&#xe65c;</i></span><span class="empty fl"><span class="fl">购物袋</span><em class="num cartnum">0</em></span>
+						</a>
+						<div class="bag-tool" style="display:none;">
+							<div id="loadingimg" style="display:none"></div>
+						</div>　|</div>
+					<div class="other-show other-show01">
+						<a class="normal-box01-a" href="https://seller.juanpi.com/guide" target="_blank" rel="nofollow">商家中心</a>
+					</div>
+					<div class="other-show other-show01">
+						<a>客户服务</a>
+						<div class="normal-box01">
+							<ul>
+								<li>
+									<a href="//www.juanpi.com/help" target="_blank" rel="nofollow">帮助中心</a>
+								</li>
+								<li>
+									<a href="//www.juanpi.com/about/service" target="_blank" rel="nofollow">联系客服</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 搜索部分 -->
+		<div class="header clear">
+			<div class="area">
+				<a class="juan-logo fl" href="//www.juanpi.com" title="卷皮首页">
+					<div class="logo logo1">
+						<div class="fl"><span class="juan-txt fl"></span></div>
+					</div>
+				</a>
+				<div class="protection">
+					<a title="每天10点开抢" class="update" href="//www.juanpi.com/help/xiaobao" target="_blank" rel="nofollow"></a>
+					<a title="职业买手砍价" class="lowest" href="//www.juanpi.com/help/xiaobao#consumer03" target="_blank" rel="nofollow"></a>
+					<a title="商品验货质检" class="check1" href="//www.juanpi.com/help/xiaobao#consumer04" target="_blank" rel="nofollow"></a>
+				</div>
+				<div class="search">
+					<span class="search-area fl">
+                <input type="text" name="keywords" id="keywords" class="txt" value="请输入想找的宝贝" title="请输入想找的宝贝">
+                <ul id="search-list"></ul>
+            </span>
+					<input type="submit" value="" class="smt fr">
+					<input type="hidden" id="search_action" name="search_action" value="//www.juanpi.com/search">
+					<input type="hidden" id="search_from" name="search_from" value="1">
+				</div>
+				<img class="banner-right-code" style="display:block;" src="//jp.juancdn.com/juanpi/images/global/jp-app-index.png">
+			</div>
+			<div class="mainNav">
+				<div class="nav">
+					<ul class="navigation fl">
+						<li class="current" channel="1">
+							<a class="bai" style="" href="//www.juanpi.com" target="_blank">首页</a>
+						</li>
+						<li class="hong">
+							<a href="//brand.juanpi.com" target="_blank">品牌折扣</a>
+							<ul class="two">
+								<li>女装打九折</li>
+								<li>女装打九折</li>
+								<li>女装打九折</li>
+								<li>女装打九折</li>
+								<li>女装打九折</li>
+								<li>女装打九折</li>
+								<li>女装打九折</li>
+								<li>女装打九折</li>
+							</ul>
+						</li>
+						<li class="hong" channel="7">
+							<a href="//jkj.juanpi.com" target="_blank">9.9包邮</a>
+							<ul class="two">
+								<li>男装打9.9折</li>
+								<li>男装打9.9折</li>
+								<li>男装打9.9折</li>
+								<li>男装打9.9折</li>
+								<li>男装打9.9折</li>
+								<li>男装打9.9折</li>
+								<li>男装打9.9折</li>
+								<li>男装打9.9折</li>
+							</ul>
+						</li>
+						<li class="hong last">
+							<a href="//www.juanpi.com/yugao" target="_blank">即将上线</a>
+							<ul class="two">
+								<li>服装打12.14上新</li>
+								<li>服装打12.14上新</li>
+								<li>服装打12.14上新</li>
+								<li>服装打12.14上新</li>
+								<li>服装打12.14上新</li>
+								<li>服装打12.14上新</li>
+								<li>服装打12.14上新</li>
+								<li>服装打12.14上新</li>
+							</ul>
+						</li>
+						<li class="hong show">
+							<a href="//www.juanpi.com/apps" target="_blank" id="show-qcodes">
+								<i class="iconfont">&#xe633;</i> 手机版
+							</a>
+							<div id="new-qcodes" class="code-tips">
+								<div class="code-box">
+									<p class="code"></p>
+									<p class="txt" style="text-align:center;font-size: 14px">随时逛 及时抢</p>
+								</div>
+							</div>
+						</li>
+						<!--  
+                    <li>
+                        <a href="//hr.juanpi.com/recruit.html" target="_blank">
+                            <em class="icon-school"></em>
+                        </a>
+                    </li>
+                 -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--banner-->
+		<div class="swiper-container">
+			<div id="banner_list" class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="http://brand.juanpi.com/0?shop_id=5416325" class="pic center">
+						<img src="../src/images/nvzhuang2.jpg">
+					</a>
+				</div> 
+				<div class="swiper-slide">
+					<a href="http://brand.juanpi.com/0?shop_id=5209318" class="pic center">
+						<img src="../src/images/bao.jpg">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="http://brand.juanpi.com/0?shop_id=5906322" class="pic center">
+						<img src="../src/images/nanzhuang.jpg">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="http://brand.juanpi.com/0?shop_id=5416325" class="pic center">
+						<img src="../src/images/nvzhuang1.jpg">
+					</a>
+				</div>
+				
+				<!--<div class="swiper-slide" style="background: url(https://goods2.juancdn.com/bao/190128/2/8/5c4e6ba933b0890df32bcc41_700x360.jpg?imageMogr2/quality/88!/format/jpg) no-repeat; z-index: 0; opacity: 0;">
+					<a target="_blank" data-ga="女装-潮流地2.12" href="http://brand.juanpi.com/0?shop_id=5706306" class="pic center" data-value="banner#1_2"></a>
+				</div>
+				<div class="swiper-slide" style="background: url(https://goods6.juancdn.com/bao/190117/b/6/5c3ffa4233b08970003d7917_700x360.jpg?imageMogr2/quality/88!/format/jpg) no-repeat; z-index: 1; opacity: 1;">
+					<a target="_blank" data-ga="男装-特步1.25" href="http://brand.juanpi.com/0?shop_id=5906322" class="pic center" data-value="banner#1_3"></a>
+				</div>
+				<div class="swiper-slide" style="background: url(https://goods6.juancdn.com/bao/190125/b/a/5c4add72b6f8ea4c1519668c_700x360.jpg?imageMogr2/quality/88!/format/jpg) no-repeat; z-index: 2; opacity: 0;">
+					<a target="_blank" data-ga="2.12-toutou-女包" href="http://brand.juanpi.com/0?shop_id=5209318" class="pic center" data-value="banner#1_4"></a>
+				</div>-->
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+   			<div class="swiper-button-next"></div>
+		</div>
+		<div class="top_wrap">
+			<div class="top_box">
+
+				<div class="banner_l">
+					<dl>
+						<dd>
+							<a href="//www.juanpi.com/nvzhuang">
+								<i class="ct-icon ct-icon-nvzhuang"></i> 女装
+								<em class="ct-line"></em>
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/nanzhuang">
+								<i class="ct-icon ct-icon-nanzhuang"></i> 男装
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/xiezi">
+								<i class="ct-icon ct-icon-xiezi"></i> 鞋子
+								<em class="ct-line"></em>
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/xiangbao">
+								<i class="ct-icon ct-icon-xiangbao"></i> 箱包
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/muying">
+								<i class="ct-icon ct-icon-muying"></i> 母婴
+								<em class="ct-line"></em>
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/meizhuang">
+								<i class="ct-icon ct-icon-meizhuang"></i> 美妆
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/jujia">
+								<i class="ct-icon ct-icon-jujia"></i> 居家
+								<em class="ct-line"></em>
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/jiafang">
+								<i class="ct-icon ct-icon-jiafang"></i> 家纺
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/wenti">
+								<i class="ct-icon ct-icon-wenti"></i> 文体
+								<em class="ct-line"></em>
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/meishi">
+								<i class="ct-icon ct-icon-meishi"></i> 美食
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/shuma">
+								<i class="ct-icon ct-icon-shuma"></i> 数码
+								<em class="ct-line"></em>
+							</a>
+						</dd>
+						<dd>
+							<a href="//www.juanpi.com/dianqi">
+								<i class="ct-icon ct-icon-dianqi"></i> 电器
+							</a>
+						</dd>
+						<dd class="border-none">
+							<a href="//www.juanpi.com/neiyi">
+								<i class="ct-icon ct-icon-neiyi"></i> 内衣
+								<em class="ct-line"></em>
+							</a>
+						</dd>
+						<dd class="border-none">
+							<a href="//www.juanpi.com/peishi">
+								<i class="ct-icon ct-icon-peishi"></i> 配饰
+							</a>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="banner_r" style="background:#f7f7f7;box-shadow:none">
+					<dl>
+						<dd>
+							<a href="//brand.juanpi.com" target="_blank" data-ga="右侧正方形小图1_125*120_品牌折扣" class="'right" data-value="ad_banner_right#1_1">
+								<img src="//s.juancdn.com/juanpi/images/banners/r-1.jpg">
+							</a>
+						</dd>
+						<dd>
+							<a href="//brand.juanpi.com/fushi" target="_blank" data-ga="右侧正方形小图2_125*120_品牌服饰" class="'right" data-value="ad_banner_right#1_2">
+								<img src="//s.juancdn.com/juanpi/images/banners/r-2.jpg">
+							</a>
+						</dd>
+						<dd>
+							<a href="//brand.juanpi.com/muying" target="_blank" data-ga="右侧正方形小图3_125*120_品牌母婴" class="'right" data-value="ad_banner_right#1_3">
+								<img src="//s.juancdn.com/juanpi/images/banners/r-3.jpg">
+							</a>
+						</dd>
+						<dd>
+							<a href="//brand.juanpi.com/jujia" target="_blank" data-ga="右侧正方形小图4_125*120_品牌居家" class="'right" data-value="ad_banner_right#1_4">
+								<img src="//s.juancdn.com/juanpi/images/banners/r-4.jpg">
+							</a>
+						</dd>
+						<dd class="last">
+							<a href="http://jkj.juanpi.com" target="_blank" data-ga="右侧长方形广告_150*120_爆款抢购——9.9包邮" class="'right" data-value="ad_banner_right#1_5">
+								<img src="//s.juancdn.com/juanpi/images/banners/r-5.jpg"></a>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="round">
+					<div class="adType">
+						<a class=""></a>
+						<a class=""></a>
+						<a class=""></a>
+						<a class="current"></a>
+					</div>
+				</div>
+				<div style="display: block;" class="banner_arrow" data-banner="arrow">
+					<a href="javascript:;" class="arrow_prev" data-arrow="prev"><i></i></a>
+					<a href="javascript:;" class="arrow_next" data-arrow="next"><i></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!--今日品牌-->
+		<div class="new-users clear">
+			<ul class="fr">
+				<li class="active">
+					<a href="//brand.juanpi.com" target="_blank"><span>全部品牌&nbsp;</span><i class="iconfont">&#xe752;</i></a>
+				</li>
+			</ul>
+			<div class="update-time fl">
+				<div class="today">
+					今日品牌<span class="today_brand">TODAY'S BRAND</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="brand_index clear">
+			<div class="brand_list">
+				<ul class="brand_data clear">
+					<li>
+						<div class="brand-status">
+							<a href="http://brand.juanpi.com/0?shop_id=5818379" class="link-box" target="_blank" data-value="brand#1_1">
+								<div class="brand-pic"><img src="https://goods2.juancdn.com/bao/190124/3/6/5c492b6933b0897bdf43fb40_680x280.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg">
+									<div class="brand_time" data-etime="1550282400" style="display: block;">
+										<p><span class="icon_time"></span>剩余&nbsp;<span class="brand-days"><em>3</em><i>天&nbsp;</i></span><span class="brand-hours"><em>13</em><i>时&nbsp;</i></span><span class="brand-minutes"><em>11</em><i>分&nbsp;</i></span><span class="brand-seconds"><em>43</em><i>秒</i></span></p>
+										<div class="brand_time_bg"></div>
+									</div>
+								</div>
+								<div class="card">
+									<span class="discount discount1">
+                                                                                <span>进入活动</span>
+									</span>
+									<span class="title" style="float: left;">
+                                                                            全场1件5折                                                                        </span>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand-status">
+							<a href="http://brand.juanpi.com/0?shop_id=5969331" class="link-box" target="_blank" data-value="brand#1_2">
+								<div class="brand-pic"><img src="https://goods5.juancdn.com/bao/190129/8/5/5c4fd27133b08912c871ea77_680x280.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg">
+									<div class="brand_time" data-etime="1550368800" style="display: block;">
+										<p><span class="icon_time"></span>剩余&nbsp;<span class="brand-days"><em>4</em><i>天&nbsp;</i></span><span class="brand-hours"><em>13</em><i>时&nbsp;</i></span><span class="brand-minutes"><em>11</em><i>分&nbsp;</i></span><span class="brand-seconds"><em>43</em><i>秒</i></span></p>
+										<div class="brand_time_bg"></div>
+									</div>
+								</div>
+								<div class="card">
+									<span class="discount discount1">
+                                                                                <span>进入活动</span>
+									</span>
+									<span class="title" style="float: left;">
+                                                                            大牌上新特惠                                                                        </span>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand-status">
+							<a href="http://brand.juanpi.com/0?shop_id= 5159384" class="link-box" target="_blank" data-value="brand#1_3">
+								<div class="brand-pic"><img src="https://goods6.juancdn.com/bao/190129/b/c/5c4fd2cfb6f8ea4785132b13_680x280.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg">
+									<div class="brand_time" data-etime="1550368800" style="display: block;">
+										<p><span class="icon_time"></span>剩余&nbsp;<span class="brand-days"><em>4</em><i>天&nbsp;</i></span><span class="brand-hours"><em>13</em><i>时&nbsp;</i></span><span class="brand-minutes"><em>11</em><i>分&nbsp;</i></span><span class="brand-seconds"><em>45</em><i>秒</i></span></p>
+										<div class="brand_time_bg"></div>
+									</div>
+								</div>
+								<div class="card">
+									<span class="discount discount1">
+                                                                                <span>进入活动</span>
+									</span>
+									<span class="title" style="float: left;">
+                                                                            大牌童鞋上新惠                                                                        </span>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand-status">
+							<a href="http://brand.juanpi.com/0?shop_id=5477343" class="link-box" target="_blank" data-value="brand#1_4">
+								<div class="brand-pic"><img src="https://goods8.juancdn.com/bao/190124/e/e/5c492aff33b0892c073a1256_680x280.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg">
+									<div class="brand_time" data-etime="1550023200" style="display: block;">
+										<p><span class="icon_time"></span>剩余&nbsp;<span class="brand-days"><em>0</em><i>天&nbsp;</i></span><span class="brand-hours"><em>13</em><i>时&nbsp;</i></span><span class="brand-minutes"><em>11</em><i>分&nbsp;</i></span><span class="brand-seconds"><em>45</em><i>秒</i></span></p>
+										<div class="brand_time_bg"></div>
+									</div>
+								</div>
+								<div class="card">
+									<span class="discount discount1">
+                                                                                <span>进入活动</span>
+									</span>
+									<span class="title" style="float: left;">
+                                                                            裸价抢先购                                                                        </span>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+
+				<ul class="brand_logo clear">
+					<li class="first">更多品牌特卖：</li>
+					<li>
+						<a href="//brand.juanpi.com/1547468?shop_id=5710467" target="_blank" data-value="brand#1_5"><img src="https://goods8.juancdn.com/bao/180228/e/b/5a966c14a9fcf89c382302d1_180x90.jpg?iopcmd=convert&amp;Q=100&amp;dst=png"></a>
+					</li>
+					<li>
+						<a href="//brand.juanpi.com/1320533?shop_id=5799342" target="_blank" data-value="brand#1_6"><img src="https://goods5.juancdn.com/bao/160520/8/9/573eb7ff151ad1437b8b45f0_180x90.png"></a>
+					</li>
+					<li>
+						<a href="//brand.juanpi.com/1144517?shop_id=5089369" target="_blank" data-value="brand#1_7"><img src="https://goods2.juancdn.com/brand/160422/3/0/5719ed5c92be59fc4c8b456a_180x90.png"></a>
+					</li>
+					<li>
+						<a href="//brand.juanpi.com/1769548?shop_id=5289368" target="_blank" data-value="brand#1_8"><img src="https://goods3.juancdn.com/bao/170628/4/8/59531dd4a43d1f6b6d38ec02_180x90.png"></a>
+					</li>
+					<li>
+						<a href="//brand.juanpi.com/1763551?shop_id=5889365" target="_blank" data-value="brand#1_9"><img src="https://goods8.juancdn.com/brand/160329/e/6/56fa187492be5928468b4580_180x90.png"></a>
+					</li>
+					<li>
+						<a href="//brand.juanpi.com/1385516?shop_id=5989315" target="_blank" data-value="brand#1_10"><img src="https://goods1.juancdn.com/brand/160606/0/0/57551ca3151ad164428b45cc_180x90.png"></a>
+					</li>
+					<li>
+						<a href="//brand.juanpi.com/1998593?shop_id=5489384" target="_blank" data-value="brand#1_11"><img src="https://goods5.juancdn.com/brand/170306/9/2/58bd7572db01d9e7658b45c9_180x90.png"></a>
+					</li>
+					<li>
+						<a href="//brand.juanpi.com/1912440?shop_id=5789374" target="_blank" data-value="brand#1_12"><img src="https://goods3.juancdn.com/bao/160422/5/f/5719d13d92be59a2028b4578_180x90.png"></a>
+					</li>
+					<li class="last">
+						<a href="//brand.juanpi.com" target="_blank">查看全部&nbsp;<span class="see_more_brand_1"><i class="iconfont">&#xe752;</i></span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--今日新品-->
+		<div class="new-users clear under">
+			<div class="update-time fl">
+				<div class="today">
+					今日新品<span>TODAY'S NEW</span>
+				</div>
+			</div>
+			<div class="update-desc">每天10点上新</div>
+		</div>
+<!--瀑布流-->
+<div class="waterfall-container">
+            <div class="waterfall-content">
+            </div>
+      </div>
+      
+      
+<script src="../src/scripts/common.js"></script>
+<script src="../src/scripts/index.js"></script>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.js"></script>
+<script src="../src/scripts/jquery.js"></script>
+</body>
+</html>
