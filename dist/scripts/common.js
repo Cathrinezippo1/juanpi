@@ -194,7 +194,6 @@ function jsonp(url,data){
                   })
              }
     
-    
     function ajaxPost(url,data){
                   return new Promise(function(resolve,reject){
                         var xhr = new XMLHttpRequest();

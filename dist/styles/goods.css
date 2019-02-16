@@ -1,0 +1,150 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: #fff; }
+
+.clear {
+  zoom: 1;
+  clear: both; }
+
+.place-show {
+  width: 1200px;
+  height: 21px;
+  overflow: hidden;
+  margin: 20px auto; }
+
+.place-show .place-explain {
+  padding: 0; }
+
+.place-show .place-explain a {
+  font-size: 14px;
+  color: #333;
+  margin: 0 5px; }
+
+.goods_show {
+  height: auto;
+  padding: 0 20px 0 0px;
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff; }
+
+.clear:before {
+  content: "";
+  display: table; }
+
+.deal-pic {
+  display: inline-block;
+  width: 480px;
+  vertical-align: top;
+  margin-bottom: 60px; }
+
+.deal-pic ul {
+  width: 58px;
+  display: inline-block;
+  font-size: 0;
+  margin-right: 18px;
+  vertical-align: middle; }
+
+.mall_item_info .deal-pic ul li.cur {
+  border-color: #333; }
+
+#container {
+  width: 400px;
+  height: 400px;
+  margin: 0px;
+  position: relative;
+  padding-bottom: 30px; }
+
+#middle-img {
+  width: 100%;
+  height: 100%; }
+
+#middle-img > img {
+  width: 100%;
+  height: 100%; }
+
+#mask {
+  width: 300px;
+  height: 300px;
+  background: #FEDE4F;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  display: none; }
+
+#small-img {
+  margin-top: 10px; }
+
+#small-img > i {
+  display: inline-block;
+  padding-left: 10px;
+  border: 2px solid #fff; }
+
+#small-img > i:hover {
+  border: 2px solid red; }
+
+#big-img {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: -510px;
+  overflow: hidden;
+  display: none; }
+
+.patch {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+
+#big {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.mall_item_info .goods_show {
+  width: 1200px;
+  height: auto;
+  padding: 0 20px 0 0px;
+  background: #fff; }
+
+.deal-wrap {
+  width: 460px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 36px; }

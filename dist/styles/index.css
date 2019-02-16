@@ -934,63 +934,141 @@ textarea {
     float: right;
     margin-right: 2px; }
 
-.waterfall-container {
-  width: 1200px;
-  margin: 0 auto; }
-
-.waterfall-container::after {
-  content: "";
-  display: block;
+.foot {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: #f9f9f9;
+  z-index: 100;
+  border-top: #ce003f solid 1px;
   clear: both; }
+  .foot .white_bg {
+    border-top: #ff464e solid 4px; }
+    .foot .white_bg .foot-con {
+      width: 1100px;
+      padding: 0 50px;
+      margin: 0 auto;
+      padding-bottom: 30px; }
+      .foot .white_bg .foot-con .con-box-n {
+        padding-top: 25px;
+        margin: 0 auto; }
+        .foot .white_bg .foot-con .con-box-n .app-side-box {
+          width: 90px; }
+          .foot .white_bg .foot-con .con-box-n .app-side-box .app-show {
+            background: url(../../src/images/jp-app-90.png) no-repeat;
+            height: 90px;
+            width: 90px;
+            margin-top: 5px; }
+          .foot .white_bg .foot-con .con-box-n .app-side-box .app-txt {
+            font-size: 14px;
+            margin: 10px 0; }
+        .foot .white_bg .foot-con .con-box-n .con-left-info {
+          padding-left: 65px;
+          width: auto;
+          overflow: hidden; }
+      .foot .white_bg .foot-con .links {
+        height: 20px;
+        padding: 10px 0px;
+        border-bottom: 1px dotted #ccc;
+        color: #999999;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 0 auto; }
+      .foot .white_bg .foot-con .ft-company {
+        text-align: center;
+        padding-top: 20px;
+        color: #c6c6c6; }
+      .foot .white_bg .foot-con .ft-company {
+        text-align: center;
+        padding-top: 2px;
+        color: #c6c6c6; }
+      .foot .white_bg .foot-con .logo {
+        color: #999999;
+        text-align: center;
+        padding-top: 10px; }
 
-.waterfall-content {
-  margin-left: -15px; }
-
-.waterfall-box {
-  width: 238px;
-  margin-left: 24px;
+.con-left-info dl {
+  width: 200px;
   float: left;
-  border: 1px solid #000;
-  transition: all 1s;
-  margin-top: 10px; }
+  display: inline; }
 
-.waterfall-box:hover {
-  box-shadow: 0 2px 8px #b6b6b6; }
+.con-left-info .help-info {
+  width: 100px; }
 
-.img-box img {
-  width: 100%;
-  height: 297px; }
+.con-left-info dt {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 7px; }
 
-.title-box {
-  padding: 10px 5px; }
+.con-left-info dl a {
+  color: #666; }
 
-.title-box p {
+.con-left-info dd {
+  margin-bottom: 5px;
+  color: #666; }
+
+.con-menu {
+  margin-top: 35px; }
+  .con-menu .con-menu .service-add {
+    background-position: 0 -5px; }
+
+.con-menu a {
+  display: block;
+  width: 86px;
+  height: 35px;
+  background: url(../../src/images/kefu.png) no-repeat; }
+
+.con-menu .service-time {
+  padding-left: 10px;
+  width: 65px; }
+  .con-menu .service-time p {
+    color: #919191;
+    line-height: 18px; }
+
+.vm {
+  vertical-align: middle; }
+
+.lh24 {
+  line-height: 24px; }
+
+.foot .links {
+  height: 20px;
+  padding: 10px 0px;
+  border-bottom: 1px dotted #ccc;
+  color: #999999;
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
+  margin: 0 auto; }
+  .foot .links span {
+    display: block;
+    overflow: hidden;
+    float: left; }
+  .foot .links .links_list_box {
+    width: 970px; }
+  .foot .links .more {
+    float: right;
+    color: #999999; }
 
-.detail-box {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px; }
+.foot .links .links_list a {
+  color: #999; }
 
-.orgin {
-  text-decoration: line-through;
-  color: #ddd; }
+.foot-con .ft-company {
+  padding-top: 20px;
+  color: #c6c6c6; }
+  .foot-con .ft-company a {
+    color: #c6c6c6; }
 
-.pagination-container {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  bottom: 10%; }
+.foot-con .ft-company {
+  color: #c6c6c6; }
 
-.pagination-container span {
-  display: inline-block;
-  padding: 5px 10px;
-  background: #ddd;
-  margin-left: 5px; }
+.foot .logo {
+  color: #999;
+  text-align: center;
+  padding-top: 10px; }
 
-.pagination-container span.active {
-  background: #b6b6b6;
-  box-shadow: 0 0 5px #000; }
+.foot .logo img {
+  margin-right: 27px; }
+
+ 

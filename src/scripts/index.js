@@ -144,7 +144,52 @@
 			}, 50);
 		}
       	
-      	
+ var index = 1;//页码
+	$.ajax({
+		type:"get",
+		url:"../../src/data/data.json",
+		async:true,
+		success : function(msg){
+			//console.log( msg )
+			getData(msg , index);
+			//确定总也是
+			var pageTotal = Math.ceil(msg.length / 4);
+			//由于ajax是异步的  分页插件要操作服务器返回的数据  需要把分页插件的调用写到ajax请求数据的内部
+			$(".M-box4").pagination({
+				pageCount : pageTotal,
+				keepShowPN : true,
+				callback : function(api){
+					var index = api.getCurrent();//获取当前页
+					$.ajax({
+						type:"get",
+						url:"data.json",
+						async:true,
+						success :function(msg){
+							getData(msg,index);
+						}
+					});
+				}
+			});
+		}
+	});
+	
+	//定义一个函数 功能 获取某页的数据
+	function getData(msg,index){
+		//显示第index页的数据
+		var str = '';
+		for( var i = (index-1)*4 ; i < index*4 ; i++  ){
+			if( i < msg.length ){
+				str += `<li>
+							<img src="img/${msg[i].src}" alt="" />
+							<p>${msg[i].name}</p>
+							<p>${msg[i].price}</p>
+							<button>购买</button>
+						</li>`;
+			}
+		}
+		$("#main").html( str );
+	}
+	     	
       	
       	
  
