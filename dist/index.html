@@ -523,16 +523,11 @@
 			<div class="update-desc">每天10点上新</div>
 		</div>
 		<!--瀑布流-->
-		 <ul class="shoplist clearfix" id="main">
-			<!--<li>
-				<img src="img/1.jpg" alt="" />
-				<p>小米1</p>
-				<p>999</p>
-				<button>购买</button>
-			</li>-->
-		</ul>	
-		<div class="M-box4" style="margin-left: 300px;"></div>
-
+		<!--<div class="waterfall-container">-->
+            <div class="waterfall-content">
+            </div>
+   <!--   </div>-->
+      <div class="pagination-container"></div>
 		<!--footer-->
 		<div class="foot">
 			<div class="white_bg">
@@ -652,3 +647,82 @@
 	</body>
 
 </html>
+<script>
+	function Pagination(){
+                  this.page = 0;
+                  this.main = document.querySelector(".waterfall-content");
+                  this.pageEle = document.querySelector(".pagination-container");
+                  this.pageArray = [];
+            }
+            Object.assign(Pagination.prototype,{
+                  init(){
+                        this.loadMsg()
+                        .then((res)=>{
+                              this.list = JSON.parse(res);
+                              this.render();
+                              this.pagination();
+                              this.bindEvent();
+                        })
+                  },
+                  loadMsg(){
+                        return ajaxGet("../src/data/juanpi.json");
+                  },
+                  render(){
+                        var html = "";
+                        for(var i = this.page * 5 ; i < this.page * 5 + 5 ; i ++){
+                              if(this.list.length === i) break; 
+                              item = this.list[i];
+                              html +=  `
+                                    <div class="waterfall-box">
+                                          <div class="img-box">
+                                                <img src="${item.src}" alt="">
+                                          </div>
+                                          <div class="title-box">
+                                                <p>${item.title}</p>
+                                          </div>
+                                          <div class="detail-box">
+                                                <div class="start">
+                                                      <span>${item.cfav}</span>
+                                                      ☆
+                                                </div>
+                                                <div class="price">
+                                                      <span class="orgin">${item.orgPrice}</span>
+                                                      <span>${item.price}</span>
+                                                </div>
+                                          </div>
+                                    </div>
+                              `
+                        }
+                        this.main.innerHTML = html;
+                  },
+                  pagination(){
+                        var pageNum = Math.ceil(this.list.length / 5);
+                        for(var i = 0 ; i < pageNum ; i ++){
+                              var span = document.createElement("span");
+                              span.innerHTML = i + 1;
+                              if(this.page === i){
+                                    span.className = "active";
+                              }
+                              this.pageEle.appendChild(span);
+                              this.pageArray.push(span);
+                        }
+                  },
+                  bindEvent(){
+                        this.pageArray.forEach((item)=>{
+                              item.addEventListener("click",this.changePage.bind(this,item))
+                              item.addEventListener("click",this.render.bind(this))
+                        })
+                  },
+                  changePage(ele){
+                        this.pageArray.forEach((item)=>{
+                              item.className = "";
+                        })
+                        ele.className = "active";
+                        var children = Array.from(ele.parentNode.children);
+                        var index = children.indexOf(ele);
+                        this.page = index;
+                  }
+            })
+            var page = new Pagination();
+            page.init();      
+</script>

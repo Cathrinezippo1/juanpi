@@ -11,44 +11,7 @@
                   autoplay:true
             })
 			
-		//瀑布流	
-		 var content = document.querySelector(".waterfall-content");
-            jsonp("../src/data/juanpi.json","callback")
-            .then(function(res){
-                  // console.log(res.result.wall.list);
-                  render(res.result.wall.list)
-            })
-
-            function render(list){
-
-                  var html = "";
-                  list.forEach((item)=>{
-                        console.log(item);
-                        html += `
-                                    <div class="waterfall-box">
-                                    <div class="img-box">
-                                          <img src="${item.show.img}" alt="">
-                                    </div>
-                                    <div class="title-box">
-                                          <p>${item.title}</p>
-                                    </div>
-                                    <div class="detail-box">
-                                          <div class="start">
-                                                <span>${item.cfav}</span>
-                                                ☆
-                                          </div>
-                                          <div class="price">
-                                                <span class="orgin">${item.orgPrice}</span>
-                                                <span>${item.price}</span>
-                                          </div>
-                                    </div>
-                              </div>
-                        `
-                  })
-
-                  content.innerHTML = html;
-            }
-      	
+		 
       	
    //搜索框   	
       		var search = document.getElementById("keywords");

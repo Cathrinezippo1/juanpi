@@ -612,27 +612,7 @@ textarea {
     margin-top: 20px;
 }
 
-//.top_bar .banner {
-//  position: relative;
-//  height: 360px;
-//  width: 700px;
-//  z-index: 0;
-//  overflow: hidden;
-//  margin-left: 230px;
-//  margin-top: 20px;
-//}
-//.top_bar .banner .swiper-slide{
-//  padding-left:0;
-//  display:block;
-//  width:100%;
-//  position:absolute;
-//  top:0;
-//}
-//.top_bar .banner .pic {
-//  height: 360px;
-//  display: block;
-//  margin: 0 auto;
-//}
+
 .top_wrap {
     width: 1200px;
     margin-left: auto;
@@ -1087,7 +1067,11 @@ textarea {
         }
     }
 }
-
+.new-users.under::after{
+      content:"";
+      display: block;
+      clear: both;
+}
 .new-users {
     width: 1200px;
     box-sizing: border-box;
@@ -1101,79 +1085,70 @@ textarea {
 }
 
 //瀑布流
-//.waterfall-container {
-//  width: 1200px;
-//  margin: 0 auto;
-//}
-//
-//.waterfall-container::after {
-//  content: "";
-//  display: block;
-//  clear: both;
-//}
-//
-//.waterfall-content {
-//  margin-left: -15px;
-//}
-//
-//.waterfall-box {
-//  width: 238px;
-//  margin-left: 24px;
-//  float: left;
-//  border: 1px solid #000;
-//  transition: all 1s;
-//  margin-top: 10px;
-//}
-//
-//.waterfall-box:hover {
-//  box-shadow: 0 2px 8px #b6b6b6;
-//}
-//
-//.img-box img {
-//  width: 100%;
-//  height: 297px;
-//}
-//
-//.title-box {
-//  padding: 10px 5px;
-//}
-//
-//.title-box p {
-//  overflow: hidden;
-//  text-overflow: ellipsis;
-//  white-space: nowrap;
-//}
-//
-//.detail-box {
-//  display: flex;
-//  justify-content: space-between;
-//  padding: 5px;
-//}
-//
-//.orgin {
-//  text-decoration: line-through;
-//  color: #ddd;
-//}
-//
-//.pagination-container {
-//  display: flex;
-//  justify-content: center;
-//  position: fixed;
-//  width: 100%;
-//  bottom: 10%;
-//}
+.waterfall-container::after{
+      content:"";
+      display: block;
+      clear: both;
+}
+.waterfall-content{
+    margin-top:40px;
+    
+ //     margin-left: -15px;
+}
+.waterfall-box{
+      width: 209px;
+      margin-left: 19px;
+      float: left;
+      border: 1px solid #000;
+      transition: all 1s;
+      margin-top: 10px;
+}
+.waterfall-box:hover{
+      box-shadow: 0 2px 8px #b6b6b6;
+}
 
-//.pagination-container span {
-//  display: inline-block;
-//  padding: 5px 10px;
-//  background: #ddd;
-//  margin-left: 5px;
-//}
-//
-//.pagination-container span.active {
-//  background: #b6b6b6;
-//  box-shadow: 0 0 5px #000;
-//}
+.img-box>img{
+      width: 100%;
+      height: 297px;
+}
+.title-box{
+      padding: 10px 5px ;
+}
+.title-box p{
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+  }
+.detail-box{
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+}
+.orgin{
+      text-decoration:line-through; 
+      color: #ddd;
+}
+
+.pagination-container{
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      width: 100%;
+      bottom: 338px;
+}
+
+.pagination-container span{
+      display: inline-block;
+      padding: 5px 10px;
+      background: #ddd;
+      margin-left: 5px;
+}
+.pagination-container span.active{
+      background: #b6b6b6;
+      box-shadow:0 0 5px #000;
+}
+ 
+ // pubuliu
 .foot {
     position: relative;
     margin: 0 auto;
@@ -1313,28 +1288,3 @@ textarea {
 .foot-con .ft-company{color:#c6c6c6}
 .foot .logo{color:#999;text-align: center;padding-top: 10px;}
 .foot .logo img{margin-right: 27px;;}
-.header{
-                height: 40px;
-                width: 900px;
-                margin: 0 auto 50px;
-            }
-            #box{
-                width: 300px;
-                height: 30px;
-                border: 1px solid black;
-                float: left;
-                margin-left:500px;
-            }
-            #box li{
-                float: left;
-                list-style: none;
-                display: inline-block;
-                padding: 0 5px;
-            }
-            #box li.active{
-                color: red;
-            }
-            #box ul{
-                /*float: left;*/
-                display: inline-block;
-            }
